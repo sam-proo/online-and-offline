@@ -1,0 +1,16 @@
+<script>
+    function checkOnlineStatus() {
+        if (navigator.onLine) {
+            alert("You are currently online.");
+        } else {
+            alert("You are currently offline.");
+        }
+    }
+
+    // Call the function initially to check the online status
+    checkOnlineStatus();
+
+    // Listen for online and offline events
+    window.addEventListener('online', checkOnlineStatus);
+    window.addEventListener('offline', checkOnlineStatus);
+</script>
